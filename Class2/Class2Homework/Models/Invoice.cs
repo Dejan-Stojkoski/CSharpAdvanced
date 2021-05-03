@@ -42,5 +42,21 @@ namespace Models
 
             return money > Amount;
         }
+
+        public int Penalty ()
+        {
+            int penalty = 0;
+
+            int days = (int)Math.Floor((DateTime.Now - DueDate).TotalDays);
+
+            if(days < 0)
+            {
+                return penalty;
+            }
+
+            penalty += (days * 10);
+
+            return penalty;
+        }
     }
 }

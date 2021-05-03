@@ -26,10 +26,6 @@ namespace InvoicesApp
                 new Administrator("Evan", "evan123", "Vodovod"),
                 new Administrator("Mallory", "mallory123", "BEG")
             };
-            DateTime now = DateTime.Now;
-            Console.WriteLine(now > invoice1.DueDate);
-            Console.WriteLine((now - invoice1.DueDate).TotalDays);
-            Console.WriteLine();
 
             while (true)
             {
@@ -67,7 +63,8 @@ namespace InvoicesApp
 
         static void CustomerUI(Customer customer)
         {
-            Console.WriteLine($"\nWelcome {customer.Username}.");
+            Console.WriteLine($"\nWelcome {customer.Username}.\n" +
+                $"Your current balance is : {customer.Balance}.");
 
             while (true)
             {

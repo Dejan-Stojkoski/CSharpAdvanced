@@ -53,7 +53,7 @@ namespace Models
 
             for (int i = 0; i < Invoices.Count; i++)
             {
-                result += $"{i + 1}. Company: {Invoices[i].Company}   |   Status: {Invoices[i].InvoiceStatus}   |   DueTo: {Invoices[i].DueDate}\n";
+                result += $"{i + 1}. Company: {Invoices[i].Company}   |   Status: {Invoices[i].InvoiceStatus}   |   DueTo: {Invoices[i].DueDate}   |   Amount: {Invoices[i].Amount}   |   Penalty: {Invoices[i].Penalty()}\n";
             }
 
             return result;
