@@ -27,6 +27,7 @@ namespace Models.DB
 
             Subjects = new List<Subject>
             {
+                //new Subject(SubjectEnum.Intro),
                 new Subject(SubjectEnum.CSharp),
                 new Subject(SubjectEnum.JavaScript),
                 new Subject(SubjectEnum.Math),

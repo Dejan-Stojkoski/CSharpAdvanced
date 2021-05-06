@@ -12,6 +12,8 @@ namespace Models
         public Student(int id, string fullname, string username, string password) : base(id, fullname, username, password, RoleEnum.Student)
         {
             CurrentSubject = SubjectEnum.Intro;
+            //Subject into = Database.Subjects.FirstOrDefault(x => x.Name == SubjectEnum.Intro);
+            //into.EnrolledStudents.Add(FullName);
             Grades = new Dictionary<string, int> { };
         }
 
