@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using VehicleDealership.Domain.Enums;
 using VehicleDealership.Domain.Interfaces;
 
@@ -23,7 +24,7 @@ namespace VehicleDealership.Domain.Models
 
         public void NewVehiclesInStockSubscriber()
         {
-
+            Console.WriteLine("New Vehicles in stock!!!!!!!!!");
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace VehicleDealership.Domain.Interfaces
+﻿using static VehicleDealership.Domain.Models.ProcurementPerson;
+
+namespace VehicleDealership.Domain.Interfaces
 {
     public interface IProcurementPerson
     {
